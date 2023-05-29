@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: hover .2s  ease-in ;
+}
+*, html {
+  font-family: "Montserrat", sans-serif;
+  transition: all .2s linear;
+}
+html{
+  font-size: 80%;
+
+}
+body {
+  background: #eee;
+  background-image: url(http://www.transparenttextures.com/patterns/cubes.png);
+}
+
+header {
+  background-color: #f5ba13;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 10;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: .2rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 20rem;
+  margin: 1rem;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  color: #f5ba13;
+  border: none;
+  width: 2.1rem;
+  height: 2.1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  outline: none;
+  background: none;
+}
+
+
+.button {
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.note:hover .button{
+  display: block;
+}
+
+form.create-note {
+  position: relative;
+  width: 20rem;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: .9rem;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: .2rem;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  resize: none;
+}
+textarea::-webkit-scrollbar{
+  height: .1rem;
+  width: .2rem;
+}
+
+textarea::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb{
+  background-color: #f5ba13;
+  border-radius: 10px;
+}
+html::-webkit-scrollbar{
+  height: .2rem;
+  width: .3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+  background-color: #f5ba13;
+  border-radius: 10px;
+}
+
+form.create-note button {
+  position: absolute;
+  right: 1.1rem;
+  bottom: -1.1rem;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2.1rem;
+  height: 2.1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  
+}
+.modified-input{
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+ 
+}
+.modified-input  input, 
+.modified-input textarea{
+  font-family: inherit;
+}
